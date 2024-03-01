@@ -54,11 +54,11 @@ img{
  }
  .leftbar{
     grid-area: leftbar;
-    line-height: 15em;
+    line-height: 10em;
  }
  .rightbar{
     grid-area: rightbar;
-    line-height: 15em;
+    line-height: 10em;
  }
  .catalog{
     grid-area: main;
