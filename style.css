@@ -1,0 +1,71 @@
+@font-face {
+    font-family: PPETRIAL;
+    src: url(assets/PPETRIAL.otf);
+}
+
+html{
+    background-color: #fefbed;
+}
+body,html{
+    height:100%;
+}
+h1{
+    text-align: center;
+    /* font-family: "Crafty Girls", cursive; */
+    font-family:"PPETRIAL";
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+}
+img{
+    width:100%;
+    height:auto;
+    margin:0px;
+  }
+.parallax {
+    background-image: url('assets/IMG_3750.PNG');
+    border: 10%;
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+.header{
+    border-top: 300px;
+}
+
+.content{
+   background-color:#fefbed;
+   border:10%;
+    /* linear-gradient(0deg,rgba(254,251,237,0.1),rgba(254,251,237,1)); */
+  }
+
+ .content.knife{
+    background: linear-gradient(0deg,rgba(254,251,237,0.1),rgba(254,251,237,1));
+ }
+
+ .gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "leftbar main rightbar ";
+ }
+ .leftbar{
+    grid-area: leftbar;
+    line-height: 15em;
+ }
+ .rightbar{
+    grid-area: rightbar;
+    line-height: 15em;
+ }
+ .catalog{
+    grid-area: main;
+ }
+.apple{
+    margin:0px;
+    padding:0px;
+}
+  
+

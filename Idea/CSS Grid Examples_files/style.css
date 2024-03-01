@@ -1,0 +1,44 @@
+.html{
+    height:100%
+}
+.portfolio-container{
+    display: grid;
+    grid-template-columns:  repeat(4, 1fr);
+    grid-template-rows: 20% 10% 40% 20% 10%;
+    grid-template-areas: 
+    "header header header header"
+    "banner banner banner banner"
+    "aside main main main"
+    "footer footer footer footer"
+    "service service gallery gallery";
+}
+.header{
+   grid-area: header; 
+   background-color: aqua;
+}
+.main{
+    grid-area: main;
+    background-color: antiquewhite;
+}
+.aside{
+    grid-area: aside;
+    background-color: azure;
+
+}
+.footer{
+    grid-area: footer;
+    background-color: bisque;
+}
+.banner{
+    grid-area: banner;
+    background-color: blanchedalmond;
+
+}
+.service{
+    grid-area: service;
+
+}
+.gallery{
+    grid-area: gallery;
+
+}

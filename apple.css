@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "PPETRIAL";
+    src: url(assets/PPETRIAL.otf);
+}
+@font-face {
+  font-family: "arrow";
+  src: url(assets/PeaxWebdesignarrows.ttf);
+}
+
+html{
+    background-color: #fefbed;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+h1{
+    text-align: center;
+    /* font-family: "Crafty Girls", cursive; */
+    font-family:"PPETRIAL";
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+}
+h2{
+  font-family: "arrow";
+  font-size: 5em;
+}
+
+img{
+    width:100%;
+    height:auto;
+    margin:0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color:red;
+}
+
+.bg-image {
+    height: 120%;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .img1 { background-image: url("assets/IMG_3772.PNG"); }
+  .img2 { background-image: url("assets/IMG_3771.PNG"); }
+  .img3 { background-image: url("assets/IMG_3770.PNG"); }
+  .img4 { background-image: url("assets/IMG_3778.PNG"); }
+  .img5 { background-image: url("assets/IMG_3777.PNG"); }
+  .img6 { background-image: url("assets/IMG_3776.PNG"); }
+  .img7 { background-image: url("assets/IMG_3783.PNG"); }
+  .img8 { background-image: url("assets/IMG_3805.PNG"); }
+  .img9 { background-image: url("assets/IMG_3784.PNG"); }
+  .img10 { background-image: url("assets/IMG_3799.PNG"); }
+  .img11 { background-image: url("assets/IMG_3798.PNG"); }
+  .img12 { background-image: url("assets/IMG_3797.PNG"); }
+  .img13 { background-image: url("assets/IMG_3801.PNG"); }
+  .img14 { background-image: url("assets/IMG_3802.PNG"); }
+  .img15 { background-image: url("assets/IMG_3803.PNG"); }
+  .img16 { background-image: url("assets/IMG_3804.PNG"); }
+  
+.apple {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    width:30%;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-rows: 1fr 2.1fr 1fr;
+  grid-template-areas: 
+  "heading heading heading"
+  "left content right"
+  "homepage homepage homepage";
+}
+.heading{
+  grid-area: heading;
+}
+.leftArrow{
+  font-family: "arrow";
+  grid-area: left;
+  place-self: center;
+}
+.rightArrow{
+  font-family: "arrow";
+  grid-area: right;
+  place-self: center;
+}
+.content{
+  grid-area: content;
+}
+.homepage{
+  grid-area: homepage;
+}
